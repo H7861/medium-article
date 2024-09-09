@@ -1,0 +1,64 @@
+h1, h2, p {
+  font-size: 1.5rem; /* Base font size */
+}
+
+a {
+  color: #000; /* Black link color */
+  text-decoration: none;
+  background-image: linear-gradient(to right, #000, #000);
+  background-size: 100% 2px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease;
+}
+
+a:hover {
+  background-size: 100% 100%; /* Fancy hover effect */
+}
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px; /* Padding for small screens */
+}
+
+@media (max-width: 960px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    max-width: 95%;
+  }
+}
+.banner {
+  background-image: url('your-image-url');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+@media (max-width: 720px) {
+  .banner {
+    height: 40vh;
+  }
+
+  .banner h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
